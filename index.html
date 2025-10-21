@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형형색색 틱택토 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">틱택토 게임</h1>
+        <div class="game-info">
+            <p class="current-player">현재 플레이어: <span id="player">X</span></p>
+            <p class="score">
+                <span class="score-x">X: <span id="scoreX">0</span></span>
+                <span class="score-o">O: <span id="scoreO">0</span></span>
+            </p>
+        </div>
+        <div class="game-board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="message" id="message"></div>
+        <button class="reset-btn" id="resetBtn">새 게임</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
